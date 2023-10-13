@@ -1,25 +1,56 @@
-/* ### Primary
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-- Light Cyan: hsl(193, 38%, 86%)
-- Neon Green: hsl(150, 100%, 66%)
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-- Dark Grayish Blue: hsl(217, 19%, 24%)
-- Dark Blue: hsl(218, 23%, 16%) 
-
-- Font size (quote): 28px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
-
-
-*/
+:root {
+  --light-Cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
 
 body {
   text-align: center;
-  background-color: hsl(217, 19%, 38%);
+  background-color: var(--dark-blue);
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--dark-grayish-blue);
+  color: var(--light-Cyan);
+}
+
+.advice-id {
+  color: var(--neon-green) !important;
+}
+
+button {
+  background-color: var(--neon-green);
+}
+
+button:hover {
+  box-shadow: -1px -1px 57px -3px rgba(82, 255, 168, 0.75);
+  -webkit-box-shadow: -1px -1px 57px -3px rgba(82, 255, 168, 0.75);
+  -moz-box-shadow: -1px -1px 57px -3px rgba(82, 255, 168, 0.75);
+}
+
+/* Use dividerWide for screens wider than 1199px */
+@media screen and (min-width: 1200px) {
+  .divider {
+    background-image: url("../src/assets/pattern-divider-desktop.svg");
+  }
+}
+
+/* Use dividerMobile for screens 1199px or narrower */
+@media screen and (max-width: 1199px) {
+  .divider {
+    background-image: url("../src/assets/pattern-divider-mobile.svg");
+  }
 }
