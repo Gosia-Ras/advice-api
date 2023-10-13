@@ -5,15 +5,20 @@ function App() {
   const url = "https://api.adviceslip.com/advice";
   const [advice, setAdvice] = useState(null);
 
-  useEffect(() => {
+  const fetchAdvice = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setAdvice(data?.slip?.advice ?? "No advice available"));
+  };
+
+  useEffect(() => {
+    fetchAdvice();
   }, []);
 
   return (
     <div className="App">
       <p>{advice}</p>
+      <button onClick={fetchAdvice}>Retrieve Advice</button>
     </div>
   );
 }
