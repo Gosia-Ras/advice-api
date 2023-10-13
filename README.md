@@ -23,17 +23,16 @@ Users should be able to:
 
 ### Screenshot
 
+![App screenshot](https://github.com/Gosia-Ras/advice-api/blob/37b65b36c388dc3c31534da55527cc0a20f0e1d6/src/assets/app.png)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Deployed on Netlify](https://gosia-hil-advice-api.netlify.app/)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [TailwindCSS](https://tailwindcss.com/) - CSS Framework
