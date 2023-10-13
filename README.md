@@ -31,8 +31,10 @@ Users should be able to:
 
 ### Built with
 
+- [API](https://api.adviceslip.com/) - Advice Slip APi
+
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - [React](https://reactjs.org/) - JS library
-- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+- [TailwindCSS](https://tailwindcss.com/) - CSS Frameworknp
