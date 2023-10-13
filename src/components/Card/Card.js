@@ -1,7 +1,8 @@
+import "./style.css";
 import React, { useState, useEffect } from "react";
-import dice from "../assets/icon-dice.svg";
-import dividerWide from "../assets/pattern-divider-desktop.svg";
-import dividerMobile from "../assets/pattern-divider-mobile.svg";
+import dice from "../../assets/icon-dice.svg";
+import dividerWide from "./pattern-divider-desktop.svg";
+import dividerMobile from "./pattern-divider-mobile.svg";
 
 const Card = () => {
   const apiUrl = "https://api.adviceslip.com/advice";
@@ -29,7 +30,7 @@ const Card = () => {
         setAdvice("An error occurred while fetching advice.");
       })
       .finally(() => {
-        // Introduce a timeout of 2000 milliseconds (2 seconds) before setting loading to false
+        // Introduce a timeout of 200 miliseconds before setting loading to false
         setTimeout(() => {
           setLoading(false);
         }, 200);
